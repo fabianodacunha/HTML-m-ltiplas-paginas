@@ -1,31 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="content-language" content="pt-br" />
     <meta name="Fabiano da Cunha Oliveira Junior" content="TOP 10 NUMEROS DE 1 A 10">
     <title>TOP 10 NUMEROS DE 1 A 10</title>
 </head>
-<body>
-    <h1>Top 10 numeros de 1 a 10 (ATUALIZADO 2026!!!)</h1>
-    <hr>
-    <h2>Nesse site voce pode se deparar com a lista completa e mais desejada pela população brasileira em 2026!</h2>
-    <img src="../img/brasil-torcedores-gif.gif" alt="VAI NUMEROSSSSSSSS" width="750" height="450">
-    <p>A lista tera suas posições com seus devidos ganhadores e suas <b>lindas caracteristicas</b> . </p>
-    <hr>
-    <h2>SEGUE A LISTA LENDARIAAAAA:</h2>
-    <a href="top1.html">1º Lugar</a> <br>  <br>  
-    <a href="top2.html">2º Lugar</a> <br>  <br> 
-    <a href="top3.html">3º Lugar</a> <br>  <br> 
-    <a href="top4.html">4º Lugar</a> <br>  <br> 
-    <a href="top5.html">5º Lugar</a> <br>  <br> 
-    <a href="top6.html">6º Lugar</a> <br>  <br> 
-    <a href="top7.html">7º Lugar</a> <br>  <br> 
-    <a href="top8.html">8º Lugar</a> <br>  <br> 
-    <a href="top9.html">9º Lugar</a> <br>  <br> 
-    <a href="top10.html">10º Lugar</a> <br>  <br> 
 
-    
+<body>
+
+    <header>
+        <h1>Top 10 numeros de 1 a 10 (ATUALIZADO 2026!!!)</h1>
+    </header>
+
+
+
+    <main>
+        <hr>
+        <h2>Nesse site voce pode se deparar com a lista completa e mais desejada pela população brasileira em 2026!</h2>
+        <img src="../img/brasil-torcedores-gif.gif" alt="VAI NUMEROSSSSSSSS" width="750" height="450">
+        <p>A lista tera suas posições com seus devidos ganhadores e suas <b>lindas caracteristicas</b> . </p>
+        <hr>
+        <h2>SEGUE A LISTA LENDARIAAAAA:</h2>
+
+        <nav>
+            <ul>
+                <li><a href="top1.html">1º Lugar</a></li>
+                <li><a href="top2.html">2º Lugar</a></li>
+                <li><a href="top3.html">3º Lugar</a></li>
+                <li><a href="top4.html">4º Lugar</a></li>
+                <li><a href="top5.html">5º Lugar</a></li>
+                <li><a href="top6.html">6º Lugar</a></li>
+                <li><a href="top7.html">7º Lugar</a></li>
+                <li><a href="top8.html">8º Lugar</a></li>
+                <li><a href="top9.html">9º Lugar</a></li>
+                <li><a href="top10.html">10º Lugar</a></li>
+                <li><a href="final.html">Final do site</a></li>
+                
+            </ul>
+        </nav>
+
+
+
+
+        <h2>Formulario extremamente importante:</h2>
+        <form action="processar_formulario.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+            <br><br>
+            <label for="opinião">Opinião:</label>
+            <textarea id="opinião" name="opinião" placeholder="Digite sua opinião" required></textarea>
+            <br>
+
+            <p>Escolaridade:
+                <select name="escolaridade" required>
+                    <option value="">Selecione</option>
+                    <option value="fundamental">Ensino Fundamental</option>
+                    <option value="medio">Ensino Médio</option>
+                    <option value="superior">Ensino Superior</option>
+                </select>
+            </p>
+
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" list="lista-estados" placeholder="Digite ou selecione o estado"
+                required>
+
+            <datalist id="lista-estados">
+                <option value="Acre">
+                <option value="Alagoas">
+                <option value="Amapá">
+                <option value="Amazonas">
+                <option value="Bahia">
+                <option value="Ceará">
+                <option value="Distrito Federal">
+                <option value="Espírito Santo">
+                <option value="Goiás">
+                <option value="Maranhão">
+                <option value="Mato Grosso">
+                <option value="Mato Grosso do Sul">
+                <option value="Minas Gerais">
+                <option value="Pará">
+                <option value="Paraíba">
+                <option value="Paraná">
+                <option value="Pernambuco">
+                <option value="Piauí">
+                <option value="Rio de Janeiro">
+                <option value="Rio Grande do Norte">
+                <option value="Rio Grande do Sul">
+                <option value="Rondônia">
+                <option value="Roraima">
+                <option value="Santa Catarina">
+                <option value="São Paulo">
+                <option value="Sergipe">
+                <option value="Tocantins">
+            </datalist>
+
+            <br>
+            <br>
+
+            <input type="radio" id="aceito" name="aceito" checked /> Acha valido esse documento?<br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+    </main>
 
 </body>
+
 </html>
